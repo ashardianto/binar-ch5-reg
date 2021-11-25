@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+<body>
+
+    <!-- HTML PAGE -->
+
+    <section class="section-game">
+        <div class="game-title">
+            <h1>Rock Paper And Scissors</h1>
+        </div>
+
+        <div class="game-score">
+            <div class="score-container">
+                <div id="player-profile">
+                    <h2 class="player-point">Player</h2>
+                </div>
+                <span id="player-score">0</span> : <span id="computer-score">0</span>
+                <div id="computer-profile">
+                    <h2>COMP</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">           
+                <div class="game-content">
+                    <div class="gamer-section">
+                        <div class="game-player">
+                            <h2 class="player-name">PLAYER</h2>
+                            <div class="game-image players player-pick">
+                                <div class="choice" id="rock">
+                                    <a href="#"><img class="d-block" src="./assets/batu.png" alt="batu"></a>
+                                </div>
+                                <div class="choice" id="paper">
+                                    <a href="#"><img class="d-block" src="./assets/kertas.png" alt="kertas"></a>
+                                </div>
+                                <div class="choice" id="scissor">
+                                    <a href="#"><img class="d-block" src="./assets/gunting.png" alt="gunting"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="game-info">
+                            <h2 class="info-typo">VS</h2>
+                        </div>
+
+                        <div class="game-computer">
+                            <h2>COM</h2>
+                            <div class="game-image players computer-pick">
+                                <div class="choice-computer" id="computer-rock">
+                                    <a href="#"><img class="d-block" src="./assets/batu.png" alt="batu"></a>
+                                </div>
+                                <div class="choice-computer" id="computer-paper">
+                                    <a href="#"><img class="d-block" src="./assets/kertas.png" alt="kertas"></a>
+                                </div>
+                                <div class="choice-computer" id="computer-scissor">
+                                    <a href="#"><img class="d-block" src="./assets/gunting.png" alt="gunting"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="play-again" id="refresh">
+                        <img src="./assets/refresh.png" alt="refresh">
+                        <h3 class="again-typo"></h3>
+                    </div>
+                </div>       
+        </div>        
+    </section>
+
+    <!-- SCRIPT -->
+
+    <script src="./script.js"></script>
+    <script src="./bootstrap.min.js"></script>
+</body>
+</html>
