@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ashardianto/binar-ch5/issues"
   },
-  "homepage": "https://github.com/ashardianto/binar-ch5#readme"
+  "homepage": "https://github.com/ashardianto/binar-ch5#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
