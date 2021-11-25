@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+    font-size: 18px;
+}
+
+img {
+    width: 100%;
+}
+
+/* MAIN PAGE */
+
+.banner-image {
+    background-image: url(./assets/main-bg.jpg);
+    background-size: cover;
+}
+
+.btn {
+    padding: 6px 50px;
+    text-transform: uppercase;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+  padding-left: 20px;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.section-games {
+    background-image: url(./assets/the-games-bg.jpg);
+    background-size: cover;
+}
+
+.scroll-prompt {
+	position: absolute;
+	z-index: 998;
+	bottom: -40px;
+	left: 50%;
+	margin-left: -80px;
+	width: 160px;
+	height: 160px;
+}
+
+	.scroll-prompt-arrow-container {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin-left: -18px;
+		animation-name: bounce;
+		animation-duration: 1.5s;
+		animation-iteration-count: infinite;
+	}
+	.scroll-prompt-arrow {
+		animation-name: opacity;
+		animation-duration: 1.5s;
+		animation-iteration-count: infinite;
+	}
+	.scroll-prompt-arrow:last-child {
+		animation-direction: reverse;
+		margin-top: -6px;
+	}
+	.scroll-prompt-arrow > div {
+		width: 36px;
+		height: 36px;
+		border-right: 8px solid #bebebe;
+		border-bottom: 8px solid #bebebe;
+		transform: rotate(45deg) translateZ(1px);
+	}
+
+@keyframes opacity {
+	0% {
+		opacity: 0;
+	}
+
+	10% {
+		opacity: 0.1;
+	}
+
+	20% {
+		opacity: 0.2;
+	}
+
+	30% {
+		opacity: 0.3;
+	}
+
+	40% {
+		opacity: 0.4;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+
+	60% {
+		opacity: 0.6;
+	}
+
+	70% {
+		opacity: 0.7;
+	}
+
+	80% {
+		opacity: 0.8;
+	}
+
+	90% {
+		opacity: 0.9;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0);
+	}
+
+	10% {
+		transform: translateY(3px);
+	}
+
+	20% {
+		transform: translateY(6px);
+	}
+
+	30% {
+		transform: translateY(9px);
+	}
+
+	40% {
+		transform: translateY(12px);
+	}
+
+	50% {
+		transform: translateY(15px);
+	}
+
+	60% {
+		transform: translateY(18px);
+	}
+
+	70% {
+		transform: translateY(21px);
+	}
+
+	80% {
+		transform: translateY(24px);
+	}
+
+	90% {
+		transform: translateY(27px);
+	}
+
+	100% {
+		transform: translateY(30px);
+	}
+}
+
+/* ALL MEDIA QUERIES */
+
+@media (max-width: 768px) {
+
+  .requirements-systems {
+    left: 0% !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .col-md-6 h3,
+  .col-lg-12 h3 {
+    font-size: 16px;
+  }
+
+  .col-md-6,
+  .col-lg-12 {
+    font-size: 8px;
+  }
+
+  .requirements-p {
+    font-size: 14px;
+  }
+
+  .requirement-row {
+    margin-top: 4em;
+  }
+
+  /* .topscore-container {
+    height: 100vh;
+  } */
+
+  .team-boxed .people {
+    margin-top: 3em !important;
+    padding: 0 !important;
+  }
+
+  
+}
+
+@media (max-width: 425px) {
+  .section-games {
+    display: block !important;
+  }
+
+  .scroll-prompt {
+    display: none;
+  }
+
+  .games-content,
+  .carousel {
+    top: 25%;
+  }
+
+  .games-content {
+    margin: 0 auto 50px !important;
+    bottom: 0 !important;
+    text-align: center !important;
+  }
+
+  .carousel {
+    margin: 0 auto;
+    width: 80% !important;
+  }
+
+  .features-container {
+    width: 350px !important;
+    margin: 0 !important;
+    text-shadow: 2px 2px black;
+  }
+
+  .features-content,
+  .features-test {
+    text-align: center;
+  }
+
+  .requirements-container {
+    width: 100% !important;
+  }
+
+  .btn {
+    margin-top: 0 !important;
+  }
+
+  .requirements-systems {
+    left: 0% !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .requirement-row {
+    margin-top: 2.5em;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .requirements-p {
+    font-size: 12px;
+  }
+
+  .col-4 h3 {
+    font-size: 16px;
+  }
+
+  .col-4 {
+    font-size: 8px;
+  }
+
+  .section-topscore {
+    height: 240vh !important;
+  }
+}
+
+/* HEADING & SUB */
+
+.heading {
+    font-size: 54px;
+    font-weight: 600;
+    text-shadow: 4px 4px black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+
+.p-heading {
+  text-shadow: 2px 2px black;
+}
+
+.heading,
+.p-heading,
+.btn {
+    margin-top: 50px;
+}
+
+/* GAMES SECTION */
+
+.games-content {
+    bottom: 11em;
+    margin-right: 1em;
+}
+
+/* FEATURES SECTION */
+
+.section-features {
+    background-image: url(./assets/features.jpg);
+    background-size: cover;
+}
+
+.features-container {
+  width: 400px;
+  margin-left: 40%;
+}
+
+.features-list {
+  margin-top: 40px;
+}
+
+/* REQUIREMENTS SECTION */
+
+.section-requirements {
+    background-image: url(./assets/requirements.png);
+    background-size: cover;
+}
+
+.requirements-container {
+    width: 100%;
+}
+
+.col-4 {
+    padding: 12px;
+}
+
+.requirements-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 2em;
+}
+
+.requirements-systems {
+    margin-top: 5em;
+    margin-left: 4em;
+    width: 50%;
+}
+
+/* TOPSCORE SECTION */
+
+.section-topscore {
+    background-color: #000;
+    background-image: linear-gradient(#000, rgba(133, 133, 133, 0.6));
+    background-image: url(./assets/top-score-bg.png);
+    background-size: cover;
+}
+
+.topscore-container {
+  margin: 0 auto;
+}
+
+.topscore-content {
+    text-align: center;
+    top: 25px;
+}
+
+.team-boxed {
+    color:#313437;
+  }
+  
+  .team-boxed p {
+    color:#7d8285;
+  }
+  
+  .team-boxed h2 {
+    font-weight:bold;
+    margin-bottom:40px;
+    padding-top:40px;
+    color:inherit;
+  }
+  
+  @media (max-width:767px) {
+    .team-boxed h2 {
+      margin-bottom:25px;
+      padding-top:25px;
+      font-size:24px;
+    }
+  }
+  
+  .team-boxed .intro {
+    font-size:16px;
+    max-width:500px;
+    margin:0 auto;
+  }
+  
+  .team-boxed .intro p {
+    margin-bottom:0;
+  }
+  
+  .team-boxed .people {
+    padding:50px 0;
+  }
+  
+  .team-boxed .item {
+    text-align:center;
+  }
+  
+  .team-boxed .item .box {
+    text-align:center;
+    padding:30px;
+    background-color:rgb(41, 41, 41);
+    margin-bottom:30px;
+  }
+  
+  .team-boxed .item .name {
+    font-weight:bold;
+    margin-top:28px;
+    margin-bottom:8px;
+    color:inherit;
+  }
+  
+  .team-boxed .item .title {
+    text-transform:uppercase;
+    font-weight:bold;
+    color:#d0d0d0;
+    letter-spacing:2px;
+    font-size:13px;
+  }
+  
+  .team-boxed .item .description {
+    font-size:15px;
+    margin-top:15px;
+    margin-bottom:20px;
+  }
+  
+  .team-boxed .item img {
+    max-width:64px;
+    max-height: 64px;
+  }
+  
+  .team-boxed .social {
+    font-size:18px;
+    color:#a2a8ae;
+  }
+  
+  .team-boxed .social a {
+    color:inherit;
+    margin:0 10px;
+    display:inline-block;
+    opacity:0.7;
+  }
+  
+  .team-boxed .social a:hover {
+    opacity:1;
+  }  
+
+  /* END OF CSS */
